@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-sm-4">
+              <label for="sort-feild">Sort By</label>
+              <select
+                 class="form-control"
+                 name="sort-field"
+                 id="sort-field"
+                 [(ngModel)]="sortField">
+                 <option
+                    *ngFor="let field of sortFields"
+                    [value]="feild">
+                    {{utilService.capitalize(field)}}
+                    
+                  </option>
+                </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="sort-direction">Sort Direction</label>
+              <div>
+                 <button
+                    class="btn btn-primary"
+                    [ngClass]="{'btn-success':sortDirection =='asc'}"
+                    (click)="sortDirection ='asc'">
+                    ASC
+                  </button>
+                  <button
+                    class="btn btn-primary"
+                    [ngClass]="{'btn-success':sortDirection =='desc'}"
+                    (click)="sortDirection ='desc'">
+                    DESC
+                  </button>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+<div *ngFor = "let car of cars | sortBy: [sortField] ">
+    <app-car-card [car]="car" class="col-sm-3"></app-car-card>
+
+  </div>
+</div>

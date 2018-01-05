@@ -1,0 +1,60 @@
+ [
+    {
+        "id":1,
+        "type":"Economy",
+        "name":"Tata Vista",
+        "price":3050000,
+        "description":"Low price and good miliage",
+        "image":"car-1"
+    },
+    {
+        "id":2,
+        "type":"Small",
+        "name":"Nano",
+        "price":1050000,
+        "description":"Low price ",
+        "image":"car-2"
+    },
+    {
+        "id":3,
+        "type":"Hatchback",
+        "name":"Swift",
+        "price":500000,
+        "description":"Good miliage",
+        "image":"car-3"
+    },
+    {
+        "id":4,
+        "type":"MPV",
+        "name":"Datsun GO+",
+        "price":4050000,
+        "description":"Low price and good miliage",
+        "image":"car-4"
+    },
+    {
+        "id":5,
+        "type":"Convertible",
+        "name":"Audi",
+        "price":6050000,
+        "description":"Good ",
+        "image":"car-5"
+    },
+    {
+        "id":6,
+        "type":"Sedan",
+        "name":"Maruti Suzuki Ciaz",
+        "price":800000,
+        "description":"Good miliage",
+        "image":"car-6"
+    },
+    {
+        "id":7,
+        "type":"Coupe",
+        "name":"Mercedes-Benze",
+        "price":15000000,
+        "description":"Good",
+        "image":"car-7"
+    }
+]
+
+
