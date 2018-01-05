@@ -11,7 +11,7 @@
                  [(ngModel)]="sortField">
                  <option
                     *ngFor="let field of sortFields"
-                    [value]="feild">
+                    [value]="field">
                     {{utilService.capitalize(field)}}
                     
                   </option>
@@ -37,7 +37,7 @@
         </div>
       </div>
   </div>
-<div *ngFor = "let car of cars | sortBy: [sortField] ">
+<div *ngFor = "let car of cars | sortBy: {property:sortField,direction:sortDirection} ">
     <app-car-card [car]="car" class="col-sm-3"></app-car-card>
 
   </div>

@@ -18,6 +18,7 @@ export class CarsListComponent implements OnInit {
     'name',
     'price'
   ];
+  sortDirection='asc';
 
   constructor(
             private http:Http,
